@@ -43,3 +43,23 @@
     gap: var(--space-400);
   }
 }
+
+/* dashboard charts */
+.dashboard-charts {
+  display: grid;
+  gap: var(--space-500);
+  margin-top: var(--space-600);
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .dashboard-charts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-charts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
